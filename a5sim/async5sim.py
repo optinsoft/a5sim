@@ -40,6 +40,33 @@ class Async5sim:
         self.apiUrl = apiUrl
         self.http_timeout = http_timeout
         self.http_proxy = http_proxy
+        self.iso_country_dict = {
+            "AF":"afghanistan", "AL":"albania", "DZ":"algeria", "AO":"angola", "AG":"antiguaandbarbuda", "AR":"argentina",
+            "AM":"armenia","AW":"aruba","AU":"australia","AT":"austria","AZ":"azerbaijan","BH":"bahrain","BD":"bangladesh",
+            "BB":"barbados","BY":"belarus","BE":"belgium","BJ":"benin","BT":"bhutane","BA":"bih","BO":"bolivia","BW":"botswana",
+            "BR":"brazil","BG":"bulgaria","BF":"burkinafaso","BI":"burundi","KH":"cambodia","CM":"cameroon","CA":"canada",
+            "CV":"capeverde","TD":"chad","CO":"colombia","CG":"congo","CR":"costarica","HR":"croatia","CY":"cyprus","CZ":"czech",
+            "DK":"denmark","DM":"dominicana","TP":"easttimor","EC":"ecuador","EG":"egypt","GB":"england","GO":"equatorialguinea",
+            "EE":"estonia","ET":"ethiopia","FI":"finland","FR":"france","GF":"frenchguiana","GA":"gabon","GM":"gambia",
+            "GE":"georgia","DE":"germany","GH":"ghana","GI":"gibraltar","GR":"greece","GT":"guatemala","GW":"guineabissau",
+            "GY":"guyana","HT":"haiti","HN":"honduras","HK":"hongkong","HU":"hungary","IN":"india","ID":"indonesia",
+            "IE":"ireland","IL":"israel","IT":"italy","CI":"ivorycoast","JM":"jamaica","JO":"jordan","KZ":"kazakhstan",
+            "KE":"kenya","KW":"kuwait","KG":"kyrgyzstan","LA":"laos","LV":"latvia","lS":"lesotho","LR":"liberia",
+            "LT":"lithuania","LU":"luxembourg","MO":"macau","MG":"madagascar","MW":"malawi","MY":"malaysia","MV":"maldives",
+            "MR":"mauritania","MU":"mauritius","MX":"mexico","MD":"moldova","MN":"mongolia","MA":"morocco","MZ":"mozambique",
+            "NA":"namibia","NP":"nepal","NL":"netherlands","NC":"newcaledonia","NZ":"newzealand","NI":"nicaragua","NG":"nigeria",
+            "MK":"northmacedonia","NO":"norway","OM":"oman","PK":"pakistan","PA":"panama","PG":"papuanewguinea","PY":"paraguay",
+            "PE":"peru","PH":"philippines","PL":"poland","PT":"portugal","PR":"puertorico","RE":"reunion","RO":"romania",
+            "RU":"russia","RW":"rwanda","KN":"saintkittsandnevis","LC":"saintlucia","VC":"saintvincentandgrenadines",
+            "SV":"salvador","SA":"saudiarabia","SN":"senegal","RS":"serbia","SL":"sierraleone","SK":"slovakia","SI":"slovenia",
+            "ZA":"southafrica","ES":"spain","LK":"srilanka","SR":"suriname","CH":"swaziland","SE":"sweden","TW":"taiwan",
+            "TJ":"tajikistan","TZ":"tanzania","TH":"thailand","TT":"tit","TG":"togo","TN":"tunisia","TM":"turkmenistan",
+            "UG":"uganda","UA":"ukraine","UY":"uruguay","US":"usa","UZ":"uzbekistan","VE":"venezuela","VN":"vietnam",
+            "ZM":"zambia"
+        }
+        self.country_iso_dict = {}
+        for item in self.iso_country_dict.items(): 
+            self.country_iso_dict[item[1]] = item[0]
 
     def logRequest(self, resource: str, query: dict, data: dict, response: dict):
         self.logger.debug(
@@ -228,3 +255,9 @@ class Async5sim:
     async def getCountries(self):
         respJson = await self.doJsonRequest('guest/countries')
         return respJson
+
+    def getCountry(self, iso_country: str):
+        return self.iso_country_dict[iso_country]
+    
+    def getIsoCountry(self, country: str, default: str):
+        return self.country_iso_dict.get(country, default)

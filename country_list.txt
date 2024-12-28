@@ -1,0 +1,148 @@
+Country,API 5SIM
+Afghanistan,afghanistan
+Albania,albania
+Algeria,algeria
+Angola,angola
+Antigua and Barbuda,antiguaandbarbuda
+Argentina,argentina
+Armenia,armenia
+Aruba,aruba
+Australia,australia
+Austria,austria
+Azerbaijan,azerbaijan
+Bahrain,bahrain
+Bangladesh,bangladesh
+Barbados,barbados
+Belarus,belarus
+Belgium,belgium
+Benin,benin
+Bhutan,bhutane
+Bosnia and Herzegovina,bih
+Bolivia,bolivia
+Botswana,botswana
+Brazil,brazil
+Bulgaria,bulgaria
+Burkina Faso,burkinafaso
+Burundi,burundi
+Cambodia,cambodia
+Cameroon,cameroon
+Canada,canada
+Cape Verde,capeverde
+Chad,chad
+Colombia,colombia
+Congo,congo
+Costa Rica,costarica
+Croatia,croatia
+Cyprus,cyprus
+Czechia,czech
+Denmark,denmark
+Dominican Republic,dominicana
+East Timor,easttimor
+Ecuador,ecuador
+Egypt,egypt
+England,england
+Equatorial Guinea,equatorialguinea
+Estonia,estonia
+Ethiopia,ethiopia
+Finland,finland
+France,france
+French Guiana,frenchguiana
+Gabon,gabon
+Gambia,gambia
+Georgia,georgia
+Germany,germany
+Ghana,ghana
+Gibraltar,gibraltar
+Greece,greece
+Guatemala,guatemala
+Guinea-Bissau,guineabissau
+Guyana,guyana
+Haiti,haiti
+Honduras,honduras
+Hong Kong,hongkong
+Hungary,hungary
+India,india
+Indonesia,indonesia
+Ireland,ireland
+Israel,israel
+Italy,italy
+Ivory Coast,ivorycoast
+Jamaica,jamaica
+Jordan,jordan
+Kazakhstan,kazakhstan
+Kenya,kenya
+Kuwait,kuwait
+Kyrgyzstan,kyrgyzstan
+Laos,laos
+Latvia,latvia
+Lesotho,lesotho
+Liberia,liberia
+Lithuania,lithuania
+Luxembourg,luxembourg
+Macau,macau
+Madagascar,madagascar
+Malawi,malawi
+Malaysia,malaysia
+Maldives,maldives
+Mauritania,mauritania
+Mauritius,mauritius
+Mexico,mexico
+Moldova,moldova
+Mongolia,mongolia
+Morocco,morocco
+Mozambique,mozambique
+Namibia,namibia
+Nepal,nepal
+Netherlands,netherlands
+New Caledonia,newcaledonia
+New Zealand,newzealand
+Nicaragua,nicaragua
+Nigeria,nigeria
+North Macedonia,northmacedonia
+Norway,norway
+Oman,oman
+Pakistan,pakistan
+Panama,panama
+Papua New Guinea,papuanewguinea
+Paraguay,paraguay
+Peru,peru
+Philippines,philippines
+Poland,poland
+Portugal,portugal
+Puertorico,puertorico
+Reunion,reunion
+Romania,romania
+Russia,russia
+Rwanda,rwanda
+Saint Kitts and Nevis,saintkittsandnevis
+Saint Lucia,saintlucia
+Saint Vincent and the Grenadines,saintvincentandgrenadines
+Salvador,salvador
+Saudi Arabia,saudiarabia
+Senegal,senegal
+Serbia,serbia
+Sierra Leone,sierraleone
+Slovakia,slovakia
+Slovenia,slovenia
+South Africa,southafrica
+Spain,spain
+Sri Lanka,srilanka
+Suriname,suriname
+Swaziland,swaziland
+Sweden,sweden
+Taiwan,taiwan
+Tajikistan,tajikistan
+Tanzania,tanzania
+Thailand,thailand
+Trinidad and Tobago,tit
+Togo,togo
+Tunisia,tunisia
+Turkmenistan,turkmenistan
+Uganda,uganda
+Ukraine,ukraine
+Uruguay,uruguay
+USA,usa
+Uzbekistan,uzbekistan
+Venezuela,venezuela
+Vietnam,vietnam
+Zambia,zambia
