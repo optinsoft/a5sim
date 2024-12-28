@@ -62,7 +62,7 @@ class Async5sim:
             "ZA":"southafrica","ES":"spain","LK":"srilanka","SR":"suriname","CH":"swaziland","SE":"sweden","TW":"taiwan",
             "TJ":"tajikistan","TZ":"tanzania","TH":"thailand","TT":"tit","TG":"togo","TN":"tunisia","TM":"turkmenistan",
             "UG":"uganda","UA":"ukraine","UY":"uruguay","US":"usa","UZ":"uzbekistan","VE":"venezuela","VN":"vietnam",
-            "ZM":"zambia","ME":"montenegro"
+            "ZM":"zambia","ME":"montenegro","GN":"guinea"
         }
         self.country_iso_dict = {}
         for item in self.iso_country_dict.items(): 
