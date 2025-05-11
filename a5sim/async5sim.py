@@ -71,9 +71,9 @@ class Async5sim:
     def logRequest(self, resource: str, query: dict, data: dict, response: dict):
         self.logger.debug(
             'resource: '+resource+
-            ('' if query is None else ', query: '+json.dumps(query)+'}')+
-            ('' if data is None else ', data: '+json.dumps(data)+'}')+
-            ', response: '+json.dumps(response)+'}'
+            ('' if query is None else ', query: '+json.dumps(query))+
+            ('' if data is None else ', data: '+json.dumps(data))+
+            ', response: '+json.dumps(response)
         )
 
     async def handleJsonResponse(self, resource, query, data, resp):
@@ -88,8 +88,8 @@ class Async5sim:
                 self.logRequest(resource, query, data, {'status':resp.status,'text':respText})
             if respText == 'success':
                 respJson = { 'success': True }
-            elif respText == 'no free phones':
-                raise NoNumbersException('No free phones')
+            elif 'no free phones' in respText:
+                raise NoNumbersException(respText)
             else:
                 respJson = json.loads(respText)
                 if resource.startswith("user/check/"):
